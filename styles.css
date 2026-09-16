@@ -1,0 +1,14 @@
+body,
+html {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
+  /*Defaults*/
+  font-family: "Rubik", sans-serif;
+}
+
+.bg-purple{
+    background-image: linear-gradient(to bottom left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}

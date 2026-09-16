@@ -1,50 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Isaac Carnes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="flex flex-col justify-between items-center overflow-hidden">
+    <main
+      class="w-1/1 h-1/1 flex flex-col lg:flex-row items-center justify-center gap-12 mx-auto lg:my-auto px-6 py-12"
+    >
+      <aside
+        class="relative w-[275px] h-[500px] bg-white rounded-4xl p-[10px] shadow-xl overflow-hidden"
+      >
+        <div
+          class="absolute w-35 h-[30px] bg-white rounded-b-2xl left-16 top-0 z-1"
+        ></div>
+        <div
+          class="relative h-1/1 w-1/1 flex flex-col space-around bg-[#f5f3f7] inset-shadow-sm rounded-4xl"
+        >
+          <div
+            class="flex items-center w-full h-[80px] bg-purple rounded-t-4xl rounded-b-md p-[20px]"
+          >
+            <p class="text-white font-extrabold mr-[5px]"><</p>
+            <img
+              class="h-[30px] rounded-4xl border border-white border-[2px] mr-[5px]"
+              src="./images/avatar.jpg"
+            />
+            <div class="flex flex-col justify-around">
+              <h2 class="text-white text-sm">Samuel Green</h2>
+              <h3 class="text-[#d89eff] text-[9px]">Available to Walk</h3>
+            </div>
+            <p class="text-white justify-self-end ml-auto rotate-90">...</p>
+          </div>
+          <section id="text-messages" class="flex-1 overflow-y-auto">
+            <div class="flex flex-col text-[9px] leading-[110%] tracking-[0px]">
+              <div
+                class="w-3/5 bg-gradient-to-br from-purple-100 to-purple-200 text-purple-600 flex p-2 rounded-2xl rounded-bl-md mx-[10px] my-[5px] shadow-sm"
+              >
+                That sounds great. I'd be happy with that.
+              </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+              <div
+                class="w-3/5 bg-gradient-to-br from-purple-100 to-purple-200 text-purple-600 flex p-2 rounded-2xl rounded-bl-md mx-[10px] my-[5px] shadow-sm"
+              >
+                Could you send over some pictures of your dog, please?
+              </div>
 
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+              <div class="flex h-[50px] justify-self-end mx-[10px] self-end">
+                <img
+                  class="m-1 rounded-xl"
+                  src="images/dog-image-1.jpg"
+                  alt="dog 1"
+                />
+                <img
+                  class="m-1 rounded-xl"
+                  src="images/dog-image-2.jpg"
+                  alt="dog 2"
+                />
+                <img
+                  class="m-1 rounded-xl"
+                  src="images/dog-image-3.jpg"
+                  alt="dog 3"
+                />
+              </div>
 
-  Samuel Green
-  Available to Walk
+              <div
+                class="w-3/5 bg-white text-gray-500 flex p-2 rounded-2xl rounded-br-md shadow-sm self-end mx-[10px] my-[5px]"
+              >
+                Here are a few pictures. She's a happy girl!
+              </div>
 
-  That sounds great. I’d be happy with that.
+              <div
+                class="w-auto bg-white text-gray-500 flex p-2 rounded-2xl rounded-br-md shadow-sm self-end mx-[10px] my-[5px]"
+              >
+                Can you make it?
+              </div>
 
-  Could you send over some pictures of your dog, please?
+              <div
+                class="w-3/5 bg-gradient-to-br from-purple-100 to-purple-200 text-purple-600 flex p-2 rounded-2xl rounded-bl-md mx-[10px] my-[5px] shadow-md"
+              >
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </div>
 
-  Here are a few pictures. She’s a happy girl!
+              <div
+                class="w-3/5 bg-purple text-white flex items-center p-2 rounded-2xl rounded-bl-md mx-[10px] my-[5px] shadow-md"
+              >
+                <span
+                  class="rounded-full border w-[12px] h-[12px] mr-[5px]"
+                ></span>
+                30 minute walk<span class="ml-auto font-bold">$29</span>
+              </div>
 
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+              <div
+                class="w-3/5 bg-purple text-white flex items-center p-2 rounded-2xl rounded-bl-md mx-[10px] my-[5px] shadow-md"
+              >
+                <span
+                  class="rounded-full border w-[12px] h-[12px] mr-[5px]"
+                ></span
+                >1 hour walk<span class="ml-auto font-bold">$49</span>
+              </div>
+              <div class="w-full shrink-0 py-0 px-4">
+                <div
+                  class="w-full bg-white text-slate-400 flex items-center px-4 py-2 rounded-full shadow-inner"
+                >
+                  <span>Type a message…</span
+                  ><button class="w-[25px] h-[25px] bg-[#3e2753] ml-auto rounded-full">
+                    <p class="text-center text-white font-bold text-[16px]">></p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </aside>
+      <div class="flex flex-col w-1/1 lg:w-1/2 text-center lg:text-left">
+        <h1 class="mb-4 text-4xl font-semibold text-slate-800">
+          Simple booking
+        </h1>
+        <p class="text-gray-500 lg:w-4/5">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+      <div
+        class="absolute right-6/11 lg:right-7/10 top-[0px] w-1/1 h-5/10 lg:w-4/10 lg:h-8/10 rounded-b-full -z-1 bg-purple"
+      ></div>
+      <div
+        class="hidden lg:block absolute right-6/11 lg:left-8/11 bottom-[0px] w-1/1 h-5/10 lg:w-4/10 lg:h-8/10 rounded-t-full -z-1 bg-[#f5f3f7]"
+      ></div>
+    </main>
+    <footer class="absolute text-center text-[0.6875rem] bottom-[10px]">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          class="text-sky-800"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" class="text-sky-800">Isaac Carnes</a>.
+      </footer>
+  </body>
 </html>
